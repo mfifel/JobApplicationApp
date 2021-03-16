@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update applicant profile</title>
+</head>
+<body>
+<div style="width: 20%">
+    <!-- NAME -->
+    <div id="name" class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Your name">
+    </div>
+
+    <!-- EMAIL -->
+    <div id="email" class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" class="form-control" name="email" placeholder="your email address">
+    </div>
+
+    <!-- CONTACT NR -->
+    <div id="phone" class="form-group">
+        <label for="phone">Contact number</label>
+        <input type="text" class="form-control" name="phone" placeholder="example: +324567899">
+    </div>
+
+    <!-- MIN SALARY -->
+    <div id="minSalary" class="form-group">
+        <label for="minSalary">Minimal salary</label>
+        <input type="text" class="form-control" name="minSalary" placeholder="example: 4500">
+    </div>
+
+    <!-- WORKING TYPE -->
+    <div id="type" class="form-group">
+        <label for="type">Working type</label>
+        <select class="form-control" name="type" required=true>
+            <option>FULL_TIME</option>
+            <option>PART_TIME</option>
+        </select>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="form-group">
+        <label for="skills">Skills</label>
+        <div id="skillSection"></div>
+
+        <label for="skills">New skill to add</label>
+        <input  type="text" class="form-control" name="description" placeholder="example: Java EE">
+        <select  class="form-control" name="level" required=true >
+            <option>BASIC</option>
+            <option>AVERAGE</option>
+            <option>PROFICIENT</option>
+            <option>EXPERT</option>
+        </select>
+        <a onclick="addSkill()" class="btn btn-primary" role="button">add this skill</a><br>
+        <label style="line-height: 14px; font-size: small">you added these skills:</label><br>
+        <p style="line-height: 14px; font-size: small" id="addedSkills"></p>
+
+    </div>
+
+    <p><a onclick="updateApplicant()" class="btn btn-primary" role="button">Update</a></p>
+</div>
+</body>
+</html>

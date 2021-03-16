@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABC Recruiting Portal</title>
+
+    <link rel="icon" href="https://www.noesissolutions.com/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="css/dashboard.min.css" rel="stylesheet">
+</head>
+
+<body>
+<nav></nav>
+
+<div id="main-menu" class="container-fluid">
+    <h2 class="sub-header">Dashboard</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Companies</h3>
+                    <p>
+                        <a onclick="loadTemplate('register-company','')" class="btn btn-primary" role="button">Register</a>
+                        <a onclick="loadTemplate('verify-company','update-company')" class="btn btn-primary" role="button">Update data</a>
+                        <a onclick="loadTemplate('verify-company','post-job')" class="btn btn-primary" role="button">Post new job</a>
+                        <a onclick="loadTemplate('verify-company','list-profiles')" class="btn btn-primary" role="button">List matching profiles</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>Applicants</h3>
+                    <p>
+                        <a onclick="loadTemplate('subscribe-applicant')" class="btn btn-primary" role="button">Subscribe</a>
+                        <a onclick="loadTemplate('verify-applicant','update-profile')" class="btn btn-primary" role="button">Update profile</a>
+                        <a onclick="loadTemplate('verify-applicant','list-jobs')" class="btn btn-primary" role="button">List matching jobs</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- dynamic content-->
+<div id="main-content"  class="col-sm-6 col-md-4" style ="width: 75%"></div>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

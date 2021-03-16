@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post new job</title>
+</head>
+<body>
+<div style="width: 20%">
+    <!-- NAME -->
+    <div id="name" class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="job name">
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div id="description" class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" name="description" placeholder="example: Java developer">
+    </div>
+
+    <!-- MAX SALARY -->
+    <div id="maxSalary" class="form-group">
+        <label for="maxSalary">Maximal salary</label>
+        <input type="text" class="form-control" name="maxSalary" placeholder="example: 2000.7">
+    </div>
+
+    <!-- WORKING TYPE -->
+    <div id="type" class="form-group">
+        <label for="type">Working type</label>
+        <select class="form-control" name="type" required=true>
+            <option>FULL_TIME</option>
+            <option>PART_TIME</option>
+        </select>
+    </div>
+
+    <p><a onclick="postNewJob()" class="btn btn-primary" role="button">post job</a></p>
+</div>
+</body>
+</html>
